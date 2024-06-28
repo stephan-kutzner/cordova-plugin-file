@@ -46,7 +46,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     </js-module>
 
     <js-module src="www/File.js" name="File">
-        <clobbers target="window.File" />
+        <clobbers target="window.FileData" />
     </js-module>
 
     <js-module src="www/FileEntry.js" name="FileEntry">
@@ -147,6 +147,7 @@ to config.xml in order for the application to find previously stored files.
         <source-file src="src/android/AssetFilesystem.java" target-dir="src/org/apache/cordova/file" />
         <source-file src="src/android/PendingRequests.java" target-dir="src/org/apache/cordova/file" />
 
+        <preference name="ANDROIDX_WEBKIT_VERSION" default="1.4.0"/>
         <framework src="androidx.webkit:webkit:$ANDROIDX_WEBKIT_VERSION" />
 
         <!-- android specific file apis -->
