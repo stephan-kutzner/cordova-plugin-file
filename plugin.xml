@@ -147,7 +147,7 @@ to config.xml in order for the application to find previously stored files.
         <source-file src="src/android/AssetFilesystem.java" target-dir="src/org/apache/cordova/file" />
         <source-file src="src/android/PendingRequests.java" target-dir="src/org/apache/cordova/file" />
 
-        <preference name="ANDROIDX_WEBKIT_VERSION" default="1.9.0"/>
+        <preference name="ANDROIDX_WEBKIT_VERSION" default="1.8.0"/>
         <framework src="androidx.webkit:webkit:$ANDROIDX_WEBKIT_VERSION" />
 
         <!-- android specific file apis -->
